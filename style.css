@@ -82,6 +82,12 @@ html, body {
     margin-bottom: 40px;
 }
 
+.about-me p {
+    padding-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
 .socials {
     left: 60px;
     height: 30%;
