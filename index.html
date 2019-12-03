@@ -15,21 +15,38 @@
 
 <body>
         <!-- Navigation -->
-        <div class="container">
+        <section class="nav">
+        <nav>
             <div class="nav-bar">
                 <div class="nav-logo">
-                    <a href="http://septynade.github.io"><img src="/images/logo.png"></a>
+                    <a href="/index.html">
+                        <img src="/images/logo.png">
+                    </a>
                 </div>
+
+                <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
                 <div class="nav-links">
                     <ul>
-                        <a href="#about-me"><li>About</li></a>
-                        <a href="#"><li>Work</li></a>
-                        <a href="#"><li>Contact</li></a>
+                        <li class="nav-item">
+                            <a href="#about-me">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                     <a href="https://drive.google.com/file/d/1-F7fTQRqqa9NlVaJAE6upAG_rKysf9t7/view?usp=sharing" target="_blank">
                     <button type="button" class="btn">Resume</button></a>
                 </div>
-            </div>
+            </div>    
+        </nav>
             <div id="about-me" class="about-me">
             <h1>I'm Ade Septian.</h1> 
             <p>An English literature graduate who taught himself to code. <br>
@@ -46,7 +63,22 @@
                 <div class="vl"></div>
             </div>
         </div>
+        </section>
         <!-- End Nav -->
+
+        <!-- Main -->
+        <section class="work"> 
+            <a href="https://rpsbyade.surge.sh" target="_blank">
+                <img src="images/project1.jpg" alt="Rock Paper Scissor Game built with Javascript">
+            </a>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed & Built by Ade Septian</p>
+        </footer>
 
 </body>
 </html>
