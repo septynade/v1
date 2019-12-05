@@ -14,10 +14,41 @@ html, body {
     color: #ececeb;
 }
 
-/* Nav */
-nav {
-    display: flex;
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "nav nav"
+        "socials main"
+        "socials card"
+        "footer footer"
+        ;
 }
+
+.main-content {
+    grid-area: main;
+}
+
+.card {
+    grid-area: card;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav {
+    grid-area: nav;
+}
+
+/* Nav */
 
 .burger {
     top: 0;
