@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Monsterrat', sans-serif;
-    background: #000000;
+    background: #111111;
     color: #ececeb;
 }
 
@@ -105,7 +105,7 @@ nav {
     content: '';
     width: 0;
     height: 2px;
-    background: #4ec037;
+    background: #f0ff00;
     display: block;
     margin: auto;
     transition: .5s;
@@ -117,10 +117,10 @@ nav {
 
 .btn {
     padding: 10px 12px;
-    border: 2px solid #4ec037;
+    border: 2px solid #f0ff00;
     border-radius: 7%;
     background-color: rgba(0, 0, 0, 1);
-    color: #4ec037;
+    color: #f0ff00;
     font-weight: normal;
     cursor: pointer;
     font-size: 20px;
@@ -165,7 +165,7 @@ nav {
     display: block;
     margin-top: 20px;
     cursor: pointer;
-    color: #4ec037  ;
+    color: #f0ff00  ;
 }
 
 .vl {
@@ -278,6 +278,6 @@ footer {
 
     .socials2 .fab {
         padding: 10px;
-        color: #4ec037;
+        color: #f0ff00;
     }
 }
