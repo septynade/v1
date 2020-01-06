@@ -116,6 +116,7 @@ nav {
 }
 
 .btn {
+    text-decoration: none;
     padding: 10px 12px;
     border: 2px solid #f0ff00;
     border-radius: 7%;
@@ -182,13 +183,6 @@ nav {
     text-decoration: none;
 }
 
-.card img {
-    margin: 1%;
-    width: 45%;
-}
-
-
-
 /* Footer */
 
 footer {
@@ -241,6 +235,7 @@ footer {
 
     .card img {
         width: 80%;
+        height: 80%;
     }
 
     .socials {
