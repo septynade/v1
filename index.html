@@ -15,40 +15,21 @@
 
 <body>
 <!-- Navigation -->
-    <div id="wrapper">
-        <section class="nav">
+<div id="wrapper">
             <nav>
-                <div class="nav-bar">
-                    <div class="nav-logo">
-                    <a href="/index.html">
-                            <img src="/images/logo.png">
-                    </a>
+                    <div class="logo">
+                        <a href="/index.html"><img src="/images/logo.png"></a>
                     </div>
-
-                    <div class="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-
-                    <div class="nav-links">
-                        <ul>
-                            <li class="nav-item">
-                                <a href="#about-me">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#work">Work</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="mailto:septynade@gmail.com">Contact</a>
-                            </li>
-                        </ul>
-                            <a href="https://drive.google.com/file/d/1-F7fTQRqqa9NlVaJAE6upAG_rKysf9t7/view?usp=sharing" target="_blank">
-                            <button type="button" class="btn">Resume</button></a>
-                    </div>
-                </div>    
+                    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+                    <ul class="menu">
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="mailto:septynade@gmail.com">Contact</a></li>
+                        <a href="https://drive.google.com/file/d/1-F7fTQRqqa9NlVaJAE6upAG_rKysf9t7/view?usp=sharing" target="_blank">
+                        <button type="button" class="btn">Resume</button></a>
+                    </ul>
             </nav> 
-        </section>
 <!-- End Nav -->
 
 <!-- Main content -->
@@ -74,10 +55,16 @@
        
 <!-- Work -->
     <section class="card">
-        <div class="card"> 
-        <a href="https://septynade.github.io/rps" target="_blank">
-            <img src="images/rps.png" alt="Rock Paper Scissor Game built with Javascript">
-        </a>
+        <div id="work" class="card"> 
+            <a href="https://septynade.github.io/rps" target="_blank">
+                <img src="images/rps.png" alt="Rock Paper Scissor Game built with Javascript">
+            </a>
+            <br>
+            <br>
+            <br>
+            <a href="https://septynade.github.io/background-generator/" target="_blank">
+                <img src="images/bgen.jpg" alt="Background generator">
+            </a>
         </div>
     </section>
     

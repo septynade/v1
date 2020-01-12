@@ -14,6 +14,8 @@ html, body {
     color: #ececeb;
 }
 
+/* Grids */
+
 #wrapper {
     width: 100%;
     height: 100vh;
@@ -48,60 +50,43 @@ nav {
     grid-area: nav;
 }
 
-/* Nav */
+/* nav */
 
-.burger {
-    top: 0;
-    right: 0;
-    background-color: white;
-    cursor: pointer;
-}
-
-.burger div {
-    height: 2px;
-    margin: 5px 0;
+nav {
     width: 100%;
-    color: white;
-    display: block;
+    z-index: 3;
 }
 
-.nav-bar {
-    display: flex;  
-    position: fixed;
-    top: 0;
-    right: 1%;
-    padding: 30px 100px 0px 80px;
-}
-
-.nav-logo img {
-    position: fixed;
-    width: 50px;
-    margin: 0 75rem 0 0;
-    left: 2%;
-}
-
-.nav-links {
-    flex: 1;
+nav .menu {
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
     list-style: none;
+    clear: both;
+    max-height: 0; 
+    transition: max-height .2s ease-out;
 }
 
-.nav-links ul {
-    margin-left: 50px;
-    display: inline;
+.logo img {
+    float: left;
+    display: block;
+    padding: 20px 20px;
+    width: 40px;
+    margin: 0 25px 0 0;
 }
-
-.nav-links ul li {
-    display: inline-block;
-    padding: 8px 25px;
-}
-
-.nav-links ul a {
+.menu a {
     color: #ececeb;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.nav-links ul li::after {
+.menu li {
+    margin-top: 30px;
+}
+
+.menu li::after {
     content: '';
     width: 0;
     height: 2px;
@@ -111,8 +96,92 @@ nav {
     transition: .5s;
 }
 
-.nav-links ul li:hover::after {
+.menu li:hover::after {
     width: 100%;
+}
+
+nav {
+    width: 100%;
+    z-index: 3;
+}
+
+nav .menu-btn {
+    display: none;
+}
+
+nav .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+nav .menu-icon .nav-icon {
+    background: #f0ff00;
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 18px;
+    transition: background .2s ease-out;
+}
+
+nav .menu-icon .nav-icon::before {
+    background: #f0ff00;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+nav .menu-icon .nav-icon::after {
+    background: #f0ff00;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -5px;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+nav .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 48em) {
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        padding: 20px 30px;
+    }
+
+    nav .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    nav .menu-icon {
+        display: none;
+    }
+
 }
 
 .btn {
@@ -128,7 +197,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: rgba(36, 36, 36, 0.7);
+    background-color: rgba(75, 75, 75, 0.7);
 }
 
 .about-me {
@@ -138,8 +207,9 @@ nav {
 }
 
 .about-me h1 {
-    font-size: 80px;
+    font-size: 50px;
     margin-bottom: 40px;
+    color: #f0ff00;
 }
 
 .about-me p {
@@ -170,8 +240,8 @@ nav {
 }
 
 .vl {
-    border-left: 2px solid #4ec037;
-    height: 70px;
+    border-left: 2px solid #f0ff00;
+    height: 100px;
     margin: 30px 0 0 6px;
 }
 
@@ -210,10 +280,6 @@ footer {
     body {
         overflow-x: hidden;
     }
-    
-    .burger {
-        display: block;
-    }
 
     .nav-bar {
         width: 70%;
@@ -230,7 +296,7 @@ footer {
     }
 
     .about-me h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .card img {
