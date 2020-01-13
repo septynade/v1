@@ -23,11 +23,10 @@ html, body {
     grid-template-columns: 1% 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-        "nav nav"
+        "logo nav"
         "socials main"
         "socials card"
-        "footer footer"
-        ;
+        "footer footer";
 }
 
 .main-content {
@@ -73,7 +72,7 @@ nav .menu {
     float: left;
     display: block;
     padding: 20px 20px;
-    width: 40px;
+    width: 50px;
     margin: 0 25px 0 0;
 }
 .menu a {
@@ -121,8 +120,8 @@ nav .menu-icon .nav-icon {
     background: #f0ff00;
     display: block;
     position: relative;
-    height: 2px;
-    width: 18px;
+    height: 3px;
+    width: 30px;
     transition: background .2s ease-out;
 }
 
@@ -131,7 +130,7 @@ nav .menu-icon .nav-icon::before {
     content: "";
     height: 100%;
     width: 100%;
-    top: 5px;
+    top: 8px;
     position: absolute;
     transition: all .2s ease-out;
 }
@@ -141,7 +140,7 @@ nav .menu-icon .nav-icon::after {
     content: "";
     height: 100%;
     width: 100%;
-    top: -5px;
+    top: -8px;
     position: absolute;
     transition: all .2s ease-out;
 }
@@ -216,7 +215,7 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .about-me p {
     padding-bottom: 40px;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -302,7 +301,7 @@ footer {
     }
 
     .about-me h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .card img {
