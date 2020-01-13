@@ -62,6 +62,7 @@ nav .menu {
     padding: 0;
     overflow: hidden;
     float: right;
+    right: -100px;
     list-style: none;
     clear: both;
     max-height: 0; 
@@ -114,6 +115,7 @@ nav .menu-icon {
     position: relative;
     float: right;
     cursor: pointer;
+    top: 10px;
 }
 
 nav .menu-icon .nav-icon {
