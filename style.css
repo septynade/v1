@@ -210,15 +210,24 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .about-me h1 {
-    font-size: 50px;
-    margin-bottom: 40px;
+    font-size: 12px;
+    margin-bottom: 10px;
     color: #f0ff00;
+    font-weight: lighter;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console";
+}
+
+.about-me h2 {
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .about-me p {
     padding-bottom: 40px;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
 
 }
 
