@@ -26,6 +26,7 @@ html, body {
         "logo nav"
         "socials main"
         "socials card"
+        "socials contact"
         "footer footer";
 }
 
@@ -35,6 +36,10 @@ html, body {
 
 .card {
     grid-area: card;
+}
+
+.contact {
+    grid-area: contact;
 }
 
 .socials {
@@ -51,11 +56,6 @@ nav {
 
 /* nav */
 
-nav {
-    width: 100%;
-    z-index: 3;
-}
-
 nav .menu {
     text-align: center;
     margin: 0px 10px 0px 10px;
@@ -69,41 +69,9 @@ nav .menu {
     transition: max-height .2s ease-out;
 }
 
-.logo img {
-    float: left;
-    display: block;
-    padding: 20px 20px;
-    width: 50px;
-    margin: 0 25px 0 0;
-}
-.menu a {
-    color: #ececeb;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.menu li {
-    margin-top: 30px;
-}
-
-.menu li::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #f0ff00;
-    display: block;
-    margin: auto;
-    transition: .5s;
-}
-
-.menu li:hover::after {
-    width: 100%;
-}
-
 nav {
     width: 100%;
     height: 70px;
-    z-index: 3;
 }
 
 nav .menu-btn {
@@ -165,26 +133,40 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
     top: 0;
 }
 
-@media (min-width: 48em) {
-    nav li {
-        float: left;
-    }
+/* Logo */
 
-    nav li a {
-        padding: 20px 30px;
-    }
-
-    nav .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    nav .menu-icon {
-        display: none;
-    }
-
+.logo img {
+    float: left;
+    display: block;
+    padding: 20px 20px;
+    width: 50px;
+    margin: 0 25px 0 0;
 }
+.menu a {
+    color: #ececeb;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu li {
+    margin-top: 30px;
+}
+
+.menu li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f0ff00;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+/* buttons */
 
 .btn {
     text-decoration: none;
@@ -203,10 +185,13 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
     background-color: rgba(75, 75, 75, 0.7);
 }
 
+/* About me section */
+
 .about-me {
-    margin: 150px 10px 100px 150px;
+    margin: 10% 0 25% 20%;
     color: #ececeb;
     width: 90%;
+    line-height: 1.5;
 }
 
 .about-me h1 {
@@ -218,9 +203,9 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
 }
 
 .about-me h2 {
-    font-size: 50px;
+    font-size: 95px;
     color: whitesmoke;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light';
 }
 
 .about-me p {
@@ -228,7 +213,11 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
     font-size: 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: lighter;
+    width: 70%;
+}
 
+#about-me .btn {
+    text-align: center;
 }
 
 /* Social buttons */
@@ -257,7 +246,7 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
     margin: 30px 0 0 6px;
 }
 
-/* Work */
+/* Work section*/
 
 .card {
     text-align: center;
@@ -269,6 +258,25 @@ nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
     width: 20%;
 }
 
+/* Contact section */
+
+.contact {
+    text-align: center;
+    padding: 10%;
+}
+
+.contact h1 {
+    font-family: "Shadows Into Light";
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.contact p {
+    font-family: "Cambria";
+    font-weight: 100;
+    padding: 0 0 20px;
+}
 /* Footer */
 
 footer {
@@ -278,6 +286,7 @@ footer {
     height: 1vh;
     text-align: center;
     color: #5a5a5a;
+    margin: 5% 0 3%;
 }
 
 .socials2 {
@@ -307,7 +316,7 @@ footer {
 
     .about-me {
         justify-content: center;
-        margin: 150px 0 100px 60px;
+        margin: 50px 160px 100px 60px;
         width: 80%;
     }
 
@@ -357,4 +366,25 @@ footer {
         padding: 10px;
         color: #f0ff00;
     }
+}
+
+@media (min-width: 48em) {
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        padding: 20px 30px;
+    }
+
+    nav .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    nav .menu-icon {
+        display: none;
+    }
+
 }
